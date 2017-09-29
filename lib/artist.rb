@@ -28,7 +28,7 @@ class Artist
     self.each do |artist|
       number_of_songs << artist.songs.length
     end
-    number_of_songs.inject(0) { |sum, x| sum + x }
+    @@song_count = number_of_songs.inject(0) { |sum, x| sum + x }
   end
 
 end
