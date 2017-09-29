@@ -2,7 +2,7 @@ class Artist
   attr_accessor :name
 
   @@song_count
-  
+
   def initialize(name)
     @name = name
     @songs = []
@@ -29,7 +29,6 @@ class Artist
       number_of_songs = artist.songs.length
     end
     number_of_songs.inject(0) { |sum, x| sum + x }
-      
   end
-  
+
 end
