@@ -24,11 +24,7 @@ class Artist
   end
 
   def self.song_count
-    number_of_songs = []
-    self.each do |artist|
-      number_of_songs << artist.songs.length
-    end
-    @@song_count = number_of_songs.inject(0) { |sum, x| sum + x }
+    self.songs.length
   end
 
 end
